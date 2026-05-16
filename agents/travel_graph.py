@@ -3,13 +3,22 @@ from dotenv import load_dotenv
 from langchain_groq import ChatGroq
 from langgraph.prebuilt import create_react_agent
 from langchain_core.messages import AIMessage
-from agents.tools import (
-    get_weather,
-    convert_currency,
-    search_flights,
-    search_hotels,
-    translate_text
-)
+try:
+    from agents.tools import (
+        get_weather,
+        convert_currency,
+        search_flights,
+        search_hotels,
+        translate_text
+    )
+except:
+    from tools import (
+        get_weather,
+        convert_currency,
+        search_flights,
+        search_hotels,
+        translate_text
+    )
 
 load_dotenv()
 
