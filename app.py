@@ -1,10 +1,10 @@
 import streamlit as st
-import sys
 import os
+import sys
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 
-from agents.travel_graph import run_agent
+from travel_graph import run_agent
 
 st.set_page_config(
     page_title="Travel Copilot",
