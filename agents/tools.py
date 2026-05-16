@@ -193,6 +193,93 @@ Tip: Visit Saif ul Malook Lake nearby!""",
    Features: Budget friendly, wifi
 
 Tip: Avoid weekends as it gets very crowded!"""
+"mansehra": """Hotels in Mansehra, KPK, Pakistan:
+
+1. Green Valley Hotel ⭐⭐⭐⭐ | $40-80/night
+   Location: Main Mansehra City
+   Features: Mountain view, restaurant, wifi, parking
+
+2. Hotel Shelton Mansehra ⭐⭐⭐ | $30-60/night
+   Location: Mansehra Bazaar
+   Features: Central location, local food, wifi
+
+3. Al-Hamra Guest House ⭐⭐⭐ | $20-40/night
+   Location: Near Bus Stand
+   Features: Budget friendly, clean rooms
+
+4. Pine View Hotel ⭐⭐⭐ | $25-50/night
+   Location: Mansehra Road
+   Features: Quiet location, parking, wifi
+
+Tip: Mansehra is gateway to Kaghan Valley and Naran!""",
+
+"abbottabad": """Hotels in Abbottabad, KPK, Pakistan:
+
+1. Sarban Hotel ⭐⭐⭐⭐⭐ | $80-150/night
+   Location: Jinnah Road, Abbottabad
+   Features: Best views, restaurant, wifi, parking
+
+2. Hotel One Abbottabad ⭐⭐⭐⭐ | $50-100/night
+   Location: Main City Center
+   Features: Modern rooms, restaurant, wifi
+
+3. Abbottabad Continental ⭐⭐⭐⭐ | $40-80/night
+   Location: Mansehra Road
+   Features: Comfortable rooms, parking, wifi
+
+4. Pine Breeze Hotel ⭐⭐⭐ | $30-60/night
+   Location: Near Burn Hall
+   Features: Budget friendly, clean rooms
+
+5. Hotel Lalkuhi ⭐⭐⭐ | $25-50/night
+   Location: Abbottabad Bazaar
+   Features: Local food, central location
+
+Tip: Visit Ayubia, Thandiani and Ilyasi Mosque nearby!""",
+
+"muzaffarabad": """Hotels in Muzaffarabad, AJK, Pakistan:
+
+1. Neelum Valley Hotel ⭐⭐⭐⭐ | $50-100/night
+   Location: Main City, Muzaffarabad
+   Features: River view, restaurant, wifi
+
+2. Hotel Sangam ⭐⭐⭐⭐ | $40-80/night
+   Location: Near Neelum River
+   Features: Scenic view, restaurant, parking
+
+3. Pearl Guest House ⭐⭐⭐ | $30-60/night
+   Location: Muzaffarabad City
+   Features: Budget friendly, local food
+
+4. AJK Lodges ⭐⭐⭐ | $20-40/night
+   Location: Near River Neelum
+   Features: Scenic view, parking
+
+Tip: Visit Neelum Valley, Shounter Lake and Red Fort nearby!""",
+
+"kashmir": """Hotels in Kashmir, Pakistan/AJK:
+
+1. Neelum Heights Hotel ⭐⭐⭐⭐⭐ | $100-200/night
+   Location: Neelum Valley, AJK
+   Features: Stunning valley view, restaurant, wifi
+
+2. Kashmir House ⭐⭐⭐⭐ | $60-120/night
+   Location: Muzaffarabad, AJK
+   Features: River view, restaurant, parking
+
+3. Valley View Resort ⭐⭐⭐⭐ | $50-100/night
+   Location: Neelum Valley
+   Features: Nature view, local food, wifi
+
+4. Shounter Lake Lodge ⭐⭐⭐ | $30-60/night
+   Location: Near Shounter Lake
+   Features: Lake view, budget friendly
+
+5. AJK Tourist Lodge ⭐⭐⭐ | $20-40/night
+   Location: Various locations AJK
+   Features: Government run, safe, budget
+
+Tip: Best time to visit Kashmir is April-October. Must visit Neelum Valley, Shounter Lake and Ratti Gali Lake!""",
     }
 
     # Check if city is in our Pakistan list
