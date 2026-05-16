@@ -192,7 +192,7 @@ Tip: Visit Saif ul Malook Lake nearby!""",
    Location: Murree City
    Features: Budget friendly, wifi
 
-Tip: Avoid weekends as it gets very crowded!"""
+Tip: Avoid weekends as it gets very crowded!""",
 "mansehra": """Hotels in Mansehra, KPK, Pakistan:
 
 1. Green Valley Hotel ⭐⭐⭐⭐ | $40-80/night
