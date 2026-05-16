@@ -1,8 +1,16 @@
 import os
+import sys
+
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+
 from dotenv import load_dotenv
 from langchain_groq import ChatGroq
 from langgraph.prebuilt import create_react_agent
 from langchain_core.messages import AIMessage
+
+load_dotenv()
+
 try:
     from agents.tools import (
         get_weather,
@@ -11,7 +19,7 @@ try:
         search_hotels,
         translate_text
     )
-except:
+except Exception:
     from tools import (
         get_weather,
         convert_currency,
@@ -19,8 +27,6 @@ except:
         search_hotels,
         translate_text
     )
-
-load_dotenv()
 
 SYSTEM_PROMPT = """You are Travel Copilot, a smart and friendly AI travel assistant.
 
