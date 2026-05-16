@@ -2,48 +2,26 @@ import os
 import sys
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
-sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
 from dotenv import load_dotenv
 from langchain_groq import ChatGroq
 from langgraph.prebuilt import create_react_agent
 from langchain_core.messages import AIMessage
+from tools import (
+    get_weather,
+    convert_currency,
+    search_flights,
+    search_hotels,
+    translate_text
+)
 
 load_dotenv()
 
-try:
-    from agents.tools import (
-        get_weather,
-        convert_currency,
-        search_flights,
-        search_hotels,
-        translate_text
-    )
-except Exception:
-    from tools import (
-        get_weather,
-        convert_currency,
-        search_flights,
-        search_hotels,
-        translate_text
-    )
-
 SYSTEM_PROMPT = """You are Travel Copilot, a smart and friendly AI travel assistant.
-
-You help travelers with:
-- Searching flights (use IATA codes e.g. ISB=Islamabad, DXB=Dubai, LHR=London)
-- Finding hotels in any city
-- Checking weather at destinations
-- Converting currencies
-- Translating text for travelers
-
-Rules:
-- Always be helpful, friendly and concise
-- Never show tool names or function calls in your response
-- Always show only the final clean answer to the user
-- When user gives a city name for flights, convert it to IATA code automatically
-- If user asks about Pakistan tourism give extra helpful tips
-- If you cannot find something, say so honestly"""
+You help travelers with flights, hotels, weather, currency, and translation.
+Always be helpful, friendly and concise.
+Never show tool names or function calls in your response.
+When user gives a city name for flights, convert it to IATA code automatically."""
 
 tools = [
     get_weather,
