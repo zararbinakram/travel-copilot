@@ -1,21 +1,46 @@
 import os
 import sys
 
-sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+sys.path.insert(0, os.path.join(os.path.dirname(os.path.abspath(__file__))))
+sys.path.insert(0, os.path.join(os.path.dirname(os.path.abspath(__file__)), '..'))
 
 from dotenv import load_dotenv
 from langchain_groq import ChatGroq
 from langgraph.prebuilt import create_react_agent
 from langchain_core.messages import AIMessage
-from tools import (
-    get_weather,
-    convert_currency,
-    search_flights,
-    search_hotels,
-    translate_text
-)
 
 load_dotenv()
+
+try:
+    from agents.tools import (
+        get_weather,
+        convert_currency,
+        search_flights,
+        search_hotels,
+        translate_text
+    )
+except ImportError:
+    try:
+        from tools import (
+            get_weather,
+            convert_currency,
+            search_flights,
+            search_hotels,
+            translate_text
+        )
+    except ImportError:
+        import importlib.util
+        spec = importlib.util.spec_from_file_location(
+            "tools",
+            os.path.join(os.path.dirname(os.path.abspath(__file__)), "tools.py")
+        )
+        tools_module = importlib.util.load_from_spec(spec)
+        spec.loader.exec_module(tools_module)
+        get_weather = tools_module.get_weather
+        convert_currency = tools_module.convert_currency
+        search_flights = tools_module.search_flights
+        search_hotels = tools_module.search_hotels
+        translate_text = tools_module.translate_text
 
 SYSTEM_PROMPT = """You are Travel Copilot, a smart and friendly AI travel assistant.
 You help travelers with flights, hotels, weather, currency, and translation.
